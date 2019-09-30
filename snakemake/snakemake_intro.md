@@ -87,6 +87,7 @@ rule plot_quals:
 
 ## Setup
 Make sure you have a directory in the workshop folder (/share/workshop/$USER):
+TODO: make this flexible for lab share
 
 ```
 mkdir /share/workshop/$USER
@@ -96,7 +97,7 @@ Copy the materials for the intro and the tutorial:
 ``` 
 cd /share/workshop/$USER
 mkdir snakemake-tutorial
-cp -r /share/biocore/keith/workshop/snakemake-tutorial/* snakemake-tutorial/```
+cp -r /share/biocore/keith/workshop/snakemake-tutorial/* snakemake-tutorial/
 cd snakemake-tutorial
 ```
 

@@ -322,6 +322,11 @@ rule counts_table:
         shell(f"rm -rf {args['countsout']}/tmp ")
 
 
+rule all:
+    input:
+        expand('%s/{sample}/{sample}_Aligned.sortedByCoord.out.bam'  % args['starout'], sample=SAMPLES),
+        expand('%s/{sample}/{sample}_Log.out'  % args['starout'], sample=SAMPLES)
+
 rule full_analysis:
     input:
         hts_summary = '%s/summary_hts_%s.txt' % (args['basename'], args['type']),
