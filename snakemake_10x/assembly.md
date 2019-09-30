@@ -48,6 +48,10 @@
     
 ***
 
+ <img src="dag_circled-1.png" alt="dag" height="600px" width="800px"/>
+ 
+***
+
 
 ## RUNNING LOCALLY (TODO)
 
@@ -72,3 +76,6 @@
     - running_locally = "True", no sbatch included in call
     - `snakemake -s snakemake.py **RULE_NAME**`
 ***
+
+
+# TODO pick better names then Left and Right side since it changes when you make the graph ...haha
