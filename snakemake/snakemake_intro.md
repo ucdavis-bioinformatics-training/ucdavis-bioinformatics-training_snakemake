@@ -83,6 +83,7 @@ rule plot_quals:
 
 </code></pre>
 
+---
 
 ## Setup
 Make sure you have a directory in the workshop folder (/share/workshop/$USER):
@@ -99,6 +100,21 @@ cp -r /share/biocore/keith/workshop/snakemake-tutorial/* snakemake-tutorial/```
 cd snakemake-tutorial
 ```
 
+Now lets see what files we have here:
+
+<div class="output">(snakemake) keithgmitchell@tadpole:/share/biocore/keith/workshop/snakemake-tutorial$ ls
+data  mapped_reads  pe_rnaseq  se_rnaseq  slurm_out  snakefile	snakefile.py  summarize_stats.py  tagseq  templates
+</div>
+
+ - data, mapped_reads = mock data for the snakefile to use (basic tutorial snakemake)
+ - pe_rnaseq, tagseq, se_rnaseq = mock data for the snakefile.py to use (the RNAseq workflow).
+ - slurm_out = where the slurm job outputs will go. 
+ - templates = JSON files for the snakefile.py 
+ - summmarize_stats.py (for hts processing stats) 
+ 
+
+---
+ 
 ## Brief Overview of Commands Using the Example Workflow
 
 1. Prepare the environment for running snakemake:
@@ -118,12 +134,14 @@ cd snakemake-tutorial
         <img src="dag.svg" alt="dag" height="500px" width="300px"/>
 
 
-5. A few extra notes: 
-    - The default file that snakemake looks for in the current working directory is the `snakefile`. If you would like to 
+---
+
+## A few extra notes: 
+   - The default file that snakemake looks for in the current working directory is the `snakefile`. If you would like to 
     override that you can specify it following the `-s`
         - `snakemake -s snakefile.py`
         - I like to keep the .py on my snakefiles so IDEs can generally interpret the python that is there.
-    - Always helpful to use the --dry-run prior to running workflows!
+   - Always helpful to use the `--dry-run` prior to running workflows!
 
 
 

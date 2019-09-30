@@ -18,4 +18,6 @@ navigation:
     url: snakemake/snakemake_intro
   - title: RNAseq/TagSeq Workflow
     url: snakemake/rna_tag_sm
+  - title: 10x Supernova (In progress)
+    url: snakemake_10x/assembly
 

@@ -1,7 +1,7 @@
 # Running UCD Bioinformatics Supernova Pipeline with Snakemake
 
 
-![alt text](https://github.com/ucdavis-bioinformatics/ucdbioinfo_supernova_pipeline/blob/master/snakemake/dag-1.png "DAG")
+![alt text](dag.svg "DAG")
 
 
 ##  HOW TO CALL THE SNAKEMAKE FILE (GENERAL):
@@ -49,10 +49,7 @@
 ***
 
 
-![alt text](https://github.com/ucdavis-bioinformatics/ucdbioinfo_supernova_pipeline/blob/master/snakemake/dag_circled-1.png "DAG Circle")
-
-
-## RUNNING LOCALLY
+## RUNNING LOCALLY (TODO)
 
 ***
 1. All
@@ -75,7 +72,3 @@
     - running_locally = "True", no sbatch included in call
     - `snakemake -s snakemake.py **RULE_NAME**`
 ***
-
-
-##  TODO 
-- add tips for running like doing a dry run or how to make graphs etc

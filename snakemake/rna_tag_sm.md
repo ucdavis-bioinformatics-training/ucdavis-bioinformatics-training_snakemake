@@ -74,8 +74,10 @@
         + Uses the new `summarize_stats.py` which can generally handle PE, SE, and Tagseq data. 
         + [See summaryize_stats.py](summarize_stats.py)
         + `summarize_stats.py --help`
-  
-  
+ 
+ 
+---
+
 ## Running the new workflow:
 
 ### Lets create a pdf of what our work flow will look like. 
